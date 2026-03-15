@@ -1,7 +1,0 @@
-{
-  "package_name": "serial_motor_demo_msgs",
-  "non_idl_tuples": [
-    "/home/ubuntu/ros2_ws/src/serial_motor_demo_msgs:msg/MotorCommand.msg",
-    "/home/ubuntu/ros2_ws/src/serial_motor_demo_msgs:msg/EncoderVals.msg"
-  ]
-}

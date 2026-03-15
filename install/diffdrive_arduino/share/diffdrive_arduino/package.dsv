@@ -1,9 +1,0 @@
-source;share/diffdrive_arduino/hook/pythonpath.ps1
-source;share/diffdrive_arduino/hook/pythonpath.dsv
-source;share/diffdrive_arduino/hook/pythonpath.sh
-source;share/diffdrive_arduino/hook/ament_prefix_path.ps1
-source;share/diffdrive_arduino/hook/ament_prefix_path.dsv
-source;share/diffdrive_arduino/hook/ament_prefix_path.sh
-source;../../build/diffdrive_arduino/share/diffdrive_arduino/hook/pythonpath_develop.ps1
-source;../../build/diffdrive_arduino/share/diffdrive_arduino/hook/pythonpath_develop.dsv
-source;../../build/diffdrive_arduino/share/diffdrive_arduino/hook/pythonpath_develop.sh

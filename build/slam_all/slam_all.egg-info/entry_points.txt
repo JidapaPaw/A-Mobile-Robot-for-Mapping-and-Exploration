@@ -1,3 +1,0 @@
-[console_scripts]
-fake_odom = slam_all.fake_odom:main
-
