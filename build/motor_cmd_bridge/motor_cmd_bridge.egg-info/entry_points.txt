@@ -1,0 +1,3 @@
+[console_scripts]
+cmd_vel_to_motor = motor_cmd_bridge.cmd_vel_to_motor:main
+

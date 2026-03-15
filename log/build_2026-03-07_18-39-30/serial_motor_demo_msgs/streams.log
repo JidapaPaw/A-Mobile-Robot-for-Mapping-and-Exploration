@@ -1,0 +1,224 @@
+[0.180s] Invoking command in '/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/my_bot:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/serial_motor_demo_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs
+[2.082s] -- The C compiler identification is GNU 11.4.0
+[2.089s] -- The CXX compiler identification is GNU 11.4.0
+[2.141s] -- Detecting C compiler ABI info
+[2.559s] -- Detecting C compiler ABI info - done
+[2.589s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.594s] -- Detecting C compile features
+[2.597s] -- Detecting C compile features - done
+[2.615s] -- Detecting CXX compiler ABI info
+[3.054s] -- Detecting CXX compiler ABI info - done
+[3.088s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.090s] -- Detecting CXX compile features
+[3.093s] -- Detecting CXX compile features - done
+[3.150s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.257s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.748s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.410s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[5.464s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.611s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.274s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.618s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[9.894s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[11.562s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.692s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[11.734s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[11.903s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[11.903s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[11.904s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[11.904s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[12.029s] -- Found PythonExtra: .so  
+[12.295s] -- Configuring done
+[12.526s] -- Generating done
+[12.595s] -- Build files have been written to: /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs
+[12.628s] Invoked command in '/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/my_bot:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/serial_motor_demo_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs
+[12.640s] Invoking command in '/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/my_bot:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs -- -j4 -l4
+[12.821s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[12.885s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[12.924s] [  5%] Built target ament_cmake_python_symlink_serial_motor_demo_msgs
+[15.422s] [  7%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o[0m
+[15.469s] [ 10%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o[0m
+[15.521s] running egg_info
+[15.524s] creating serial_motor_demo_msgs.egg-info
+[15.525s] writing serial_motor_demo_msgs.egg-info/PKG-INFO
+[15.535s] writing dependency_links to serial_motor_demo_msgs.egg-info/dependency_links.txt
+[15.537s] writing top-level names to serial_motor_demo_msgs.egg-info/top_level.txt
+[15.539s] writing manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'
+[15.553s] reading manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'
+[15.559s] writing manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'
+[15.851s] [ 10%] Built target ament_cmake_python_build_serial_motor_demo_msgs_egg
+[16.030s] [ 10%] Built target serial_motor_demo_msgs__cpp
+[16.036s] [ 12%] [32m[1mLinking C shared library libserial_motor_demo_msgs__rosidl_generator_c.so[0m
+[16.131s] [ 15%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[16.164s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[16.173s] [ 20%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[16.597s] [ 20%] Built target serial_motor_demo_msgs__rosidl_generator_c
+[16.744s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[18.484s] [ 25%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/motor_command__type_support.cpp.o[0m
+[20.003s] [ 28%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/motor_command__type_support.cpp.o[0m
+[20.031s] [ 30%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/motor_command__type_support.cpp.o[0m
+[20.263s] [ 33%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support_c.cpp.o[0m
+[22.440s] [ 35%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/encoder_vals__type_support.cpp.o[0m
+[24.545s] [ 38%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support_c.cpp.o[0m
+[25.321s] [ 41%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/encoder_vals__type_support.cpp.o[0m
+[25.619s] [ 43%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.cpp.o[0m
+[26.768s] [ 46%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_cpp.so[0m
+[27.288s] [ 46%] Built target serial_motor_demo_msgs__rosidl_typesupport_cpp
+[27.443s] [ 48%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[28.753s] [ 51%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[29.697s] [ 51%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c
+[29.836s] [ 53%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[30.895s] [ 56%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[31.255s] [ 58%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[31.311s] [ 58%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp
+[31.581s] [ 61%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support.c.o[0m
+[31.591s] [ 64%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.c.o[0m
+[32.046s] [ 66%] [32m[1mLinking C shared library libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so[0m
+[32.085s] [ 66%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp
+[32.471s] [ 66%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_c
+[32.875s] [ 71%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/motor_command__type_support.cpp.o[0m
+[32.884s] [ 71%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/encoder_vals__type_support.cpp.o[0m
+[33.310s] [ 74%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_c.so[0m
+[33.746s] [ 74%] Built target serial_motor_demo_msgs__rosidl_typesupport_c
+[33.880s] [ 74%] Built target serial_motor_demo_msgs
+[34.000s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[37.193s] [ 76%] Built target serial_motor_demo_msgs__py
+[37.468s] [ 79%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_encoder_vals_s.c.o[0m
+[37.479s] [ 82%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_command_s.c.o[0m
+[57.987s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/serial_motor_demo_msgs/libserial_motor_demo_msgs__rosidl_generator_py.so[0m
+[57.987s] [ 84%] Built target serial_motor_demo_msgs__rosidl_generator_py
+[57.988s] [ 87%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[57.988s] [ 89%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[57.989s] [ 92%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[58.034s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[58.047s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[58.048s] [100%] [32m[1mLinking C shared library rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[58.069s] [100%] Built target serial_motor_demo_msgs__rosidl_typesupport_c__pyext
+[58.070s] [100%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_c__pyext
+[58.071s] [100%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c__pyext
+[58.072s] Invoked command in '/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/my_bot:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs -- -j4 -l4
+[58.075s] Invoking command in '/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/my_bot:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs
+[58.077s] -- Install configuration: ""
+[58.077s] -- Execute custom install script
+[58.078s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/rosidl_interfaces/serial_motor_demo_msgs
+[58.079s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.h
+[58.080s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__struct.h
+[58.080s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.h
+[58.081s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__functions.h
+[58.082s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__struct.h
+[58.082s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.h
+[58.096s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/encoder_vals.h
+[58.097s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_command.h
+[58.098s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_generator_c__visibility_control.h
+[58.098s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/library_path.sh
+[58.099s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/library_path.dsv
+[58.100s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_fastrtps_c.h
+[58.100s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_fastrtps_c.h
+[58.101s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[58.102s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_introspection_c.h
+[58.103s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_introspection_c.h
+[58.103s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[58.104s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__builder.hpp
+[58.105s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__struct.hpp
+[58.105s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__traits.hpp
+[58.106s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.hpp
+[58.106s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__builder.hpp
+[58.107s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__struct.hpp
+[58.108s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__traits.hpp
+[58.108s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.hpp
+[58.109s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/encoder_vals.hpp
+[58.110s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_command.hpp
+[58.111s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[58.111s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_fastrtps_cpp.hpp
+[58.112s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_fastrtps_cpp.hpp
+[58.113s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[58.113s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_introspection_cpp.hpp
+[58.114s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_introspection_cpp.hpp
+[58.127s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/pythonpath.sh
+[58.139s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/pythonpath.dsv
+[58.140s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[58.141s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[58.142s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[58.149s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[58.150s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/__init__.py
+[58.151s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c
+[58.152s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[58.152s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[58.153s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/libserial_motor_demo_msgs__rosidl_generator_py.so
+[58.154s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/__init__.py
+[58.155s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_encoder_vals.py
+[58.155s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_encoder_vals_s.c
+[58.156s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_motor_command.py
+[58.157s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_motor_command_s.c
+[58.157s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[58.158s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[58.158s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[58.172s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[58.173s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[58.174s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[58.174s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.idl
+[58.175s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.idl
+[58.175s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.msg
+[58.176s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.msg
+[58.177s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/package_run_dependencies/serial_motor_demo_msgs
+[58.177s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/parent_prefix_path/serial_motor_demo_msgs
+[58.178s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/ament_prefix_path.sh
+[58.190s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/ament_prefix_path.dsv
+[58.190s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/path.sh
+[58.191s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/path.dsv
+[58.192s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.bash
+[58.192s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.sh
+[58.193s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.zsh
+[58.193s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.dsv
+[58.194s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.dsv
+[58.195s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/packages/serial_motor_demo_msgs
+[58.196s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake-extras.cmake
+[58.196s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[58.197s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[58.197s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[58.198s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[58.213s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[58.214s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[58.215s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgsConfig.cmake
+[58.215s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgsConfig-version.cmake
+[58.216s] -- Symlinking: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.xml
+[58.216s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_c.so
+[58.217s] -- Set runtime path of "/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_c.so" to ""
+[58.218s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so
+[58.218s] -- Set runtime path of "/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[58.219s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so
+[58.219s] -- Set runtime path of "/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so" to ""
+[58.220s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_c.so
+[58.220s] -- Set runtime path of "/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_c.so" to ""
+[58.220s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so
+[58.221s] -- Set runtime path of "/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[58.221s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so
+[58.222s] -- Set runtime path of "/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[58.222s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_cpp.so
+[58.239s] -- Set runtime path of "/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_cpp.so" to ""
+[58.241s] Listing '/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs'...
+[58.241s] Compiling '/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/__init__.py'...
+[58.242s] Listing '/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg'...
+[58.242s] Compiling '/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/__init__.py'...
+[58.243s] Compiling '/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_encoder_vals.py'...
+[58.244s] Compiling '/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_motor_command.py'...
+[58.244s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_py.so
+[58.244s] -- Set runtime path of "/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_py.so" to ""
+[58.245s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cExport.cmake
+[58.245s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cExport-noconfig.cmake
+[58.246s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[58.246s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[58.247s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cExport.cmake
+[58.248s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[58.248s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cExport.cmake
+[58.249s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[58.250s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cppExport.cmake
+[58.251s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[58.251s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[58.252s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[58.252s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[58.253s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cppExport.cmake
+[58.253s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[58.254s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_pyExport.cmake
+[58.266s] -- Installing: /home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_pyExport-noconfig.cmake
+[58.449s] Invoked command in '/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/my_bot:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs

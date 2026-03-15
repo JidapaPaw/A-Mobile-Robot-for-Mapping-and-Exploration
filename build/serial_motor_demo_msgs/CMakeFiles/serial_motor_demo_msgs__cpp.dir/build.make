@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/senseri/ros2_ws/src/serial_motor_demo_msgs
+CMAKE_SOURCE_DIR = /home/ubuntu/ros2_ws/src/serial_motor_demo_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/senseri/ros2_ws/build/serial_motor_demo_msgs
+CMAKE_BINARY_DIR = /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs
 
 # Utility rule file for serial_motor_demo_msgs__cpp.
 
@@ -71,11 +71,6 @@ CMakeFiles/serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_m
 CMakeFiles/serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_command__struct.hpp
 CMakeFiles/serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_command__traits.hpp
 CMakeFiles/serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_command__type_support.hpp
-CMakeFiles/serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_vels.hpp
-CMakeFiles/serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__builder.hpp
-CMakeFiles/serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__struct.hpp
-CMakeFiles/serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__traits.hpp
-CMakeFiles/serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.hpp
 CMakeFiles/serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/encoder_vals.hpp
 CMakeFiles/serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/encoder_vals__builder.hpp
 CMakeFiles/serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/encoder_vals__struct.hpp
@@ -99,10 +94,9 @@ rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_command.hpp: /opt/ros/humb
 rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_command.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_command.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_command.hpp: rosidl_adapter/serial_motor_demo_msgs/msg/MotorCommand.idl
-rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_command.hpp: rosidl_adapter/serial_motor_demo_msgs/msg/MotorVels.idl
 rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_command.hpp: rosidl_adapter/serial_motor_demo_msgs/msg/EncoderVals.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/senseri/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_command__builder.hpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_command.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_command__builder.hpp
@@ -115,21 +109,6 @@ rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_command__traits.hpp
 
 rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_command__type_support.hpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_command.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_command__type_support.hpp
-
-rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_vels.hpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_command.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_vels.hpp
-
-rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__builder.hpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_command.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__builder.hpp
-
-rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__struct.hpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_command.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__struct.hpp
-
-rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__traits.hpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_command.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__traits.hpp
-
-rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.hpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_command.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.hpp
 
 rosidl_generator_cpp/serial_motor_demo_msgs/msg/encoder_vals.hpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_command.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/serial_motor_demo_msgs/msg/encoder_vals.hpp
@@ -155,13 +134,8 @@ serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/det
 serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_command__struct.hpp
 serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_command__traits.hpp
 serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_command__type_support.hpp
-serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__builder.hpp
-serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__struct.hpp
-serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__traits.hpp
-serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.hpp
 serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/encoder_vals.hpp
 serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_command.hpp
-serial_motor_demo_msgs__cpp: rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_vels.hpp
 serial_motor_demo_msgs__cpp: CMakeFiles/serial_motor_demo_msgs__cpp.dir/build.make
 .PHONY : serial_motor_demo_msgs__cpp
 
@@ -174,6 +148,6 @@ CMakeFiles/serial_motor_demo_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/serial_motor_demo_msgs__cpp.dir/clean
 
 CMakeFiles/serial_motor_demo_msgs__cpp.dir/depend:
-	cd /home/senseri/ros2_ws/build/serial_motor_demo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/senseri/ros2_ws/src/serial_motor_demo_msgs /home/senseri/ros2_ws/src/serial_motor_demo_msgs /home/senseri/ros2_ws/build/serial_motor_demo_msgs /home/senseri/ros2_ws/build/serial_motor_demo_msgs /home/senseri/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles/serial_motor_demo_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/ros2_ws/src/serial_motor_demo_msgs /home/ubuntu/ros2_ws/src/serial_motor_demo_msgs /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles/serial_motor_demo_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/serial_motor_demo_msgs__cpp.dir/depend
 

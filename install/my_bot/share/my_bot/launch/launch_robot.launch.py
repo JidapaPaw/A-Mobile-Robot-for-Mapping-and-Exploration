@@ -1,1 +1,0 @@
-/home/senseri/ros2_ws/src/my_bot/launch/launch_robot.launch.py

@@ -1,1 +1,1 @@
-prepend-non-duplicate;PYTHONPATH;/home/senseri/ros2_ws/build/serial_motor_demo
+prepend-non-duplicate;PYTHONPATH;/home/ubuntu/ros2_ws/build/serial_motor_demo

@@ -1,11 +1,10 @@
 {
   "package_name": "serial_motor_demo_msgs",
-  "output_dir": "/home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs",
+  "output_dir": "/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource",
   "idl_tuples": [
-    "/home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs:msg/MotorCommand.idl",
-    "/home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs:msg/MotorVels.idl",
-    "/home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs:msg/EncoderVals.idl"
+    "/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs:msg/MotorCommand.idl",
+    "/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs:msg/EncoderVals.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp",
@@ -16,8 +15,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
-    "/home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs/msg/MotorCommand.idl",
-    "/home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs/msg/MotorVels.idl",
-    "/home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs/msg/EncoderVals.idl"
+    "/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs/msg/MotorCommand.idl",
+    "/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs/msg/EncoderVals.idl"
   ]
 }

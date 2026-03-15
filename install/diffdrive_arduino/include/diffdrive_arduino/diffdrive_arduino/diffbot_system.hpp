@@ -1,1 +1,0 @@
-/home/senseri/ros2_ws/src/diffdrive_arduino-humble/hardware/include/diffdrive_arduino/diffbot_system.hpp

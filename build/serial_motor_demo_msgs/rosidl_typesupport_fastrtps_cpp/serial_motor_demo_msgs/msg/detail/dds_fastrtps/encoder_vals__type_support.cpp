@@ -32,10 +32,10 @@ cdr_serialize(
   const serial_motor_demo_msgs::msg::EncoderVals & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: mot_1_enc_val
-  cdr << ros_message.mot_1_enc_val;
-  // Member: mot_2_enc_val
-  cdr << ros_message.mot_2_enc_val;
+  // Member: left
+  cdr << ros_message.left;
+  // Member: right
+  cdr << ros_message.right;
   return true;
 }
 
@@ -45,14 +45,14 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   serial_motor_demo_msgs::msg::EncoderVals & ros_message)
 {
-  // Member: mot_1_enc_val
-  cdr >> ros_message.mot_1_enc_val;
+  // Member: left
+  cdr >> ros_message.left;
 
-  // Member: mot_2_enc_val
-  cdr >> ros_message.mot_2_enc_val;
+  // Member: right
+  cdr >> ros_message.right;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_serial_motor_demo_msgs
@@ -67,15 +67,15 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: mot_1_enc_val
+  // Member: left
   {
-    size_t item_size = sizeof(ros_message.mot_1_enc_val);
+    size_t item_size = sizeof(ros_message.left);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: mot_2_enc_val
+  // Member: right
   {
-    size_t item_size = sizeof(ros_message.mot_2_enc_val);
+    size_t item_size = sizeof(ros_message.right);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -103,7 +103,7 @@ max_serialized_size_EncoderVals(
   is_plain = true;
 
 
-  // Member: mot_1_enc_val
+  // Member: left
   {
     size_t array_size = 1;
 
@@ -112,7 +112,7 @@ max_serialized_size_EncoderVals(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: mot_2_enc_val
+  // Member: right
   {
     size_t array_size = 1;
 
@@ -129,7 +129,7 @@ max_serialized_size_EncoderVals(
     using DataType = serial_motor_demo_msgs::msg::EncoderVals;
     is_plain =
       (
-      offsetof(DataType, mot_2_enc_val) +
+      offsetof(DataType, right) +
       last_member_size
       ) == ret_val;
   }

@@ -1,1 +1,0 @@
-/home/senseri/ros2_ws/src/my_bot/launch/__pycache__/lidar.launch.py

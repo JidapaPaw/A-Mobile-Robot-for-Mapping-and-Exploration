@@ -50,22 +50,22 @@ bool serial_motor_demo_msgs__msg__encoder_vals__convert_from_py(PyObject * _pyms
     assert(strncmp("serial_motor_demo_msgs.msg._encoder_vals.EncoderVals", full_classname_dest, 52) == 0);
   }
   serial_motor_demo_msgs__msg__EncoderVals * ros_message = _ros_message;
-  {  // mot_1_enc_val
-    PyObject * field = PyObject_GetAttrString(_pymsg, "mot_1_enc_val");
+  {  // left
+    PyObject * field = PyObject_GetAttrString(_pymsg, "left");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->mot_1_enc_val = (int32_t)PyLong_AsLong(field);
+    ros_message->left = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
-  {  // mot_2_enc_val
-    PyObject * field = PyObject_GetAttrString(_pymsg, "mot_2_enc_val");
+  {  // right
+    PyObject * field = PyObject_GetAttrString(_pymsg, "right");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->mot_2_enc_val = (int32_t)PyLong_AsLong(field);
+    ros_message->right = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
 
@@ -90,22 +90,22 @@ PyObject * serial_motor_demo_msgs__msg__encoder_vals__convert_to_py(void * raw_r
     }
   }
   serial_motor_demo_msgs__msg__EncoderVals * ros_message = (serial_motor_demo_msgs__msg__EncoderVals *)raw_ros_message;
-  {  // mot_1_enc_val
+  {  // left
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->mot_1_enc_val);
+    field = PyLong_FromLong(ros_message->left);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "mot_1_enc_val", field);
+      int rc = PyObject_SetAttrString(_pymessage, "left", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // mot_2_enc_val
+  {  // right
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->mot_2_enc_val);
+    field = PyLong_FromLong(ros_message->right);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "mot_2_enc_val", field);
+      int rc = PyObject_SetAttrString(_pymessage, "right", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -1,0 +1,4 @@
+[console_scripts]
+cmd_vel_to_motor = diffdrive_arduino.cmd_vel_to_motor:main
+cmd_vel_to_odom = diffdrive_arduino.cmd_vel_to_odom:main
+

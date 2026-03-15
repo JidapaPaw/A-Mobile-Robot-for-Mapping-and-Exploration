@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/senseri/ros2_ws/src/serial_motor_demo_msgs
+CMAKE_SOURCE_DIR = /home/ubuntu/ros2_ws/src/serial_motor_demo_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/senseri/ros2_ws/build/serial_motor_demo_msgs
+CMAKE_BINARY_DIR = /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs
 
 # Utility rule file for serial_motor_demo_msgs.
 
@@ -66,9 +66,8 @@ include CMakeFiles/serial_motor_demo_msgs.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/serial_motor_demo_msgs.dir/progress.make
 
-CMakeFiles/serial_motor_demo_msgs: /home/senseri/ros2_ws/src/serial_motor_demo_msgs/msg/MotorCommand.msg
-CMakeFiles/serial_motor_demo_msgs: /home/senseri/ros2_ws/src/serial_motor_demo_msgs/msg/MotorVels.msg
-CMakeFiles/serial_motor_demo_msgs: /home/senseri/ros2_ws/src/serial_motor_demo_msgs/msg/EncoderVals.msg
+CMakeFiles/serial_motor_demo_msgs: /home/ubuntu/ros2_ws/src/serial_motor_demo_msgs/msg/MotorCommand.msg
+CMakeFiles/serial_motor_demo_msgs: /home/ubuntu/ros2_ws/src/serial_motor_demo_msgs/msg/EncoderVals.msg
 
 serial_motor_demo_msgs: CMakeFiles/serial_motor_demo_msgs
 serial_motor_demo_msgs: CMakeFiles/serial_motor_demo_msgs.dir/build.make
@@ -83,6 +82,6 @@ CMakeFiles/serial_motor_demo_msgs.dir/clean:
 .PHONY : CMakeFiles/serial_motor_demo_msgs.dir/clean
 
 CMakeFiles/serial_motor_demo_msgs.dir/depend:
-	cd /home/senseri/ros2_ws/build/serial_motor_demo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/senseri/ros2_ws/src/serial_motor_demo_msgs /home/senseri/ros2_ws/src/serial_motor_demo_msgs /home/senseri/ros2_ws/build/serial_motor_demo_msgs /home/senseri/ros2_ws/build/serial_motor_demo_msgs /home/senseri/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles/serial_motor_demo_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/ros2_ws/src/serial_motor_demo_msgs /home/ubuntu/ros2_ws/src/serial_motor_demo_msgs /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles/serial_motor_demo_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/serial_motor_demo_msgs.dir/depend
 

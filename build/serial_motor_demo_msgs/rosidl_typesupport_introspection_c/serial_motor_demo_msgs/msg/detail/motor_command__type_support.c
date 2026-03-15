@@ -31,16 +31,16 @@ void serial_motor_demo_msgs__msg__MotorCommand__rosidl_typesupport_introspection
   serial_motor_demo_msgs__msg__MotorCommand__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember serial_motor_demo_msgs__msg__MotorCommand__rosidl_typesupport_introspection_c__MotorCommand_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember serial_motor_demo_msgs__msg__MotorCommand__rosidl_typesupport_introspection_c__MotorCommand_message_member_array[2] = {
   {
-    "is_pwm",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
+    "left",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(serial_motor_demo_msgs__msg__MotorCommand, is_pwm),  // bytes offset in struct
+    offsetof(serial_motor_demo_msgs__msg__MotorCommand, left),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -50,31 +50,14 @@ static rosidl_typesupport_introspection_c__MessageMember serial_motor_demo_msgs_
     NULL  // resize(index) function pointer
   },
   {
-    "mot_1_req_rad_sec",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    "right",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(serial_motor_demo_msgs__msg__MotorCommand, mot_1_req_rad_sec),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "mot_2_req_rad_sec",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(serial_motor_demo_msgs__msg__MotorCommand, mot_2_req_rad_sec),  // bytes offset in struct
+    offsetof(serial_motor_demo_msgs__msg__MotorCommand, right),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -88,7 +71,7 @@ static rosidl_typesupport_introspection_c__MessageMember serial_motor_demo_msgs_
 static const rosidl_typesupport_introspection_c__MessageMembers serial_motor_demo_msgs__msg__MotorCommand__rosidl_typesupport_introspection_c__MotorCommand_message_members = {
   "serial_motor_demo_msgs__msg",  // message namespace
   "MotorCommand",  // message name
-  3,  // number of fields
+  2,  // number of fields
   sizeof(serial_motor_demo_msgs__msg__MotorCommand),
   serial_motor_demo_msgs__msg__MotorCommand__rosidl_typesupport_introspection_c__MotorCommand_message_member_array,  // message members
   serial_motor_demo_msgs__msg__MotorCommand__rosidl_typesupport_introspection_c__MotorCommand_init_function,  // function to initialize message memory (memory has to be allocated)

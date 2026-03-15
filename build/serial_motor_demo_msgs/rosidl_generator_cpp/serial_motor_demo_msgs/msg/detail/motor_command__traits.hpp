@@ -25,24 +25,17 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: is_pwm
+  // member: left
   {
-    out << "is_pwm: ";
-    rosidl_generator_traits::value_to_yaml(msg.is_pwm, out);
+    out << "left: ";
+    rosidl_generator_traits::value_to_yaml(msg.left, out);
     out << ", ";
   }
 
-  // member: mot_1_req_rad_sec
+  // member: right
   {
-    out << "mot_1_req_rad_sec: ";
-    rosidl_generator_traits::value_to_yaml(msg.mot_1_req_rad_sec, out);
-    out << ", ";
-  }
-
-  // member: mot_2_req_rad_sec
-  {
-    out << "mot_2_req_rad_sec: ";
-    rosidl_generator_traits::value_to_yaml(msg.mot_2_req_rad_sec, out);
+    out << "right: ";
+    rosidl_generator_traits::value_to_yaml(msg.right, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -51,33 +44,23 @@ inline void to_block_style_yaml(
   const MotorCommand & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: is_pwm
+  // member: left
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "is_pwm: ";
-    rosidl_generator_traits::value_to_yaml(msg.is_pwm, out);
+    out << "left: ";
+    rosidl_generator_traits::value_to_yaml(msg.left, out);
     out << "\n";
   }
 
-  // member: mot_1_req_rad_sec
+  // member: right
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "mot_1_req_rad_sec: ";
-    rosidl_generator_traits::value_to_yaml(msg.mot_1_req_rad_sec, out);
-    out << "\n";
-  }
-
-  // member: mot_2_req_rad_sec
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "mot_2_req_rad_sec: ";
-    rosidl_generator_traits::value_to_yaml(msg.mot_2_req_rad_sec, out);
+    out << "right: ";
+    rosidl_generator_traits::value_to_yaml(msg.right, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

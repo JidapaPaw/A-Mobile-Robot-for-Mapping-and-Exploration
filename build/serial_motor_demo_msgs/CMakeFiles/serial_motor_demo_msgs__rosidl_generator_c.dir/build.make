@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/senseri/ros2_ws/src/serial_motor_demo_msgs
+CMAKE_SOURCE_DIR = /home/ubuntu/ros2_ws/src/serial_motor_demo_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/senseri/ros2_ws/build/serial_motor_demo_msgs
+CMAKE_BINARY_DIR = /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs
 
 # Include any dependencies generated for this target.
 include CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/depend.make
@@ -83,10 +83,9 @@ rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h: /opt/ros/humble/s
 rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
 rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h: rosidl_adapter/serial_motor_demo_msgs/msg/MotorCommand.idl
-rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h: rosidl_adapter/serial_motor_demo_msgs/msg/MotorVels.idl
 rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h: rosidl_adapter/serial_motor_demo_msgs/msg/EncoderVals.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/senseri/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.h: rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.h
@@ -96,18 +95,6 @@ rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__struct.h: ro
 
 rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support.h: rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support.h
-
-rosidl_generator_c/serial_motor_demo_msgs/msg/motor_vels.h: rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/serial_motor_demo_msgs/msg/motor_vels.h
-
-rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.h: rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.h
-
-rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__struct.h: rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__struct.h
-
-rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.h: rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.h
 
 rosidl_generator_c/serial_motor_demo_msgs/msg/encoder_vals.h: rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/serial_motor_demo_msgs/msg/encoder_vals.h
@@ -124,71 +111,52 @@ rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.
 rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c: rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c
 
-rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c: rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c
-
 rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c: rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c
 
 CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o: CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o: rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c
 CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o: CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/senseri/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o -MF CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o.d -o CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o -c /home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o -MF CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o.d -o CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o -c /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c
 
 CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c > CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c > CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.i
 
 CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c -o CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.s
-
-CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.o: CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.o: rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c
-CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.o: CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/senseri/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.o -MF CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.o.d -o CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.o -c /home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c
-
-CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c > CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.i
-
-CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c -o CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c -o CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.s
 
 CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o: CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o: rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c
 CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o: CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/senseri/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o -MF CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o.d -o CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o -c /home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o -MF CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o.d -o CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o -c /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c
 
 CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c > CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c > CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.i
 
 CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c -o CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c -o CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.s
 
 # Object files for target serial_motor_demo_msgs__rosidl_generator_c
 serial_motor_demo_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o" \
-"CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.o" \
 "CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o"
 
 # External object files for target serial_motor_demo_msgs__rosidl_generator_c
 serial_motor_demo_msgs__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libserial_motor_demo_msgs__rosidl_generator_c.so: CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o
-libserial_motor_demo_msgs__rosidl_generator_c.so: CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.o
 libserial_motor_demo_msgs__rosidl_generator_c.so: CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o
 libserial_motor_demo_msgs__rosidl_generator_c.so: CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/build.make
 libserial_motor_demo_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libserial_motor_demo_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libserial_motor_demo_msgs__rosidl_generator_c.so: CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/senseri/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libserial_motor_demo_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libserial_motor_demo_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -207,13 +175,8 @@ CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/depend: rosidl_generat
 CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.h
 CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__struct.h
 CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support.h
-CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c
-CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.h
-CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__struct.h
-CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.h
 CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/serial_motor_demo_msgs/msg/encoder_vals.h
 CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/serial_motor_demo_msgs/msg/motor_command.h
-CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/serial_motor_demo_msgs/msg/motor_vels.h
-	cd /home/senseri/ros2_ws/build/serial_motor_demo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/senseri/ros2_ws/src/serial_motor_demo_msgs /home/senseri/ros2_ws/src/serial_motor_demo_msgs /home/senseri/ros2_ws/build/serial_motor_demo_msgs /home/senseri/ros2_ws/build/serial_motor_demo_msgs /home/senseri/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/ros2_ws/src/serial_motor_demo_msgs /home/ubuntu/ros2_ws/src/serial_motor_demo_msgs /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/depend
 

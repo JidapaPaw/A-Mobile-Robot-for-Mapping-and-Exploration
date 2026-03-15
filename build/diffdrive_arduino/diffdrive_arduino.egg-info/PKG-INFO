@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: diffdrive-arduino
+Version: 0.0.0
+Summary: Diff drive Arduino bridge (cmd_vel -> serial L/R PWM)
+Home-page: UNKNOWN
+Maintainer: ubuntu
+Maintainer-email: ubuntu@todo.todo
+License: Apache-2.0
+Platform: UNKNOWN
+
+UNKNOWN
+

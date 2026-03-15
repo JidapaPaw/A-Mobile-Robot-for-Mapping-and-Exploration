@@ -55,13 +55,13 @@ class EncoderVals(metaclass=Metaclass_EncoderVals):
     """Message class 'EncoderVals'."""
 
     __slots__ = [
-        '_mot_1_enc_val',
-        '_mot_2_enc_val',
+        '_left',
+        '_right',
     ]
 
     _fields_and_field_types = {
-        'mot_1_enc_val': 'int32',
-        'mot_2_enc_val': 'int32',
+        'left': 'int32',
+        'right': 'int32',
     }
 
     SLOT_TYPES = (
@@ -73,8 +73,8 @@ class EncoderVals(metaclass=Metaclass_EncoderVals):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.mot_1_enc_val = kwargs.get('mot_1_enc_val', int())
-        self.mot_2_enc_val = kwargs.get('mot_2_enc_val', int())
+        self.left = kwargs.get('left', int())
+        self.right = kwargs.get('right', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -105,9 +105,9 @@ class EncoderVals(metaclass=Metaclass_EncoderVals):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.mot_1_enc_val != other.mot_1_enc_val:
+        if self.left != other.left:
             return False
-        if self.mot_2_enc_val != other.mot_2_enc_val:
+        if self.right != other.right:
             return False
         return True
 
@@ -117,31 +117,31 @@ class EncoderVals(metaclass=Metaclass_EncoderVals):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def mot_1_enc_val(self):
-        """Message field 'mot_1_enc_val'."""
-        return self._mot_1_enc_val
+    def left(self):
+        """Message field 'left'."""
+        return self._left
 
-    @mot_1_enc_val.setter
-    def mot_1_enc_val(self, value):
+    @left.setter
+    def left(self, value):
         if __debug__:
             assert \
                 isinstance(value, int), \
-                "The 'mot_1_enc_val' field must be of type 'int'"
+                "The 'left' field must be of type 'int'"
             assert value >= -2147483648 and value < 2147483648, \
-                "The 'mot_1_enc_val' field must be an integer in [-2147483648, 2147483647]"
-        self._mot_1_enc_val = value
+                "The 'left' field must be an integer in [-2147483648, 2147483647]"
+        self._left = value
 
     @builtins.property
-    def mot_2_enc_val(self):
-        """Message field 'mot_2_enc_val'."""
-        return self._mot_2_enc_val
+    def right(self):
+        """Message field 'right'."""
+        return self._right
 
-    @mot_2_enc_val.setter
-    def mot_2_enc_val(self, value):
+    @right.setter
+    def right(self, value):
         if __debug__:
             assert \
                 isinstance(value, int), \
-                "The 'mot_2_enc_val' field must be of type 'int'"
+                "The 'right' field must be of type 'int'"
             assert value >= -2147483648 and value < 2147483648, \
-                "The 'mot_2_enc_val' field must be an integer in [-2147483648, 2147483647]"
-        self._mot_2_enc_val = value
+                "The 'right' field must be an integer in [-2147483648, 2147483647]"
+        self._right = value

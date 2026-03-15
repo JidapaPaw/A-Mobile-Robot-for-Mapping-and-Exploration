@@ -7,8 +7,6 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/serial_motor_demo_msgs/msg/_encoder_vals_s.c"
   "../rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_command.py"
   "../rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_command_s.c"
-  "../rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_vels.py"
-  "../rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_vels_s.c"
   "CMakeFiles/serial_motor_demo_msgs__py"
 )
 

@@ -20,11 +20,8 @@ extern "C"
 /// Struct defined in msg/MotorCommand in the package serial_motor_demo_msgs.
 typedef struct serial_motor_demo_msgs__msg__MotorCommand
 {
-  bool is_pwm;
-  /// in pwm mode this is cast to int and is pwm value
-  float mot_1_req_rad_sec;
-  /// in pwm mode this is cast to int and is pwm value
-  float mot_2_req_rad_sec;
+  int16_t left;
+  int16_t right;
 } serial_motor_demo_msgs__msg__MotorCommand;
 
 // Struct for a sequence of serial_motor_demo_msgs__msg__MotorCommand.

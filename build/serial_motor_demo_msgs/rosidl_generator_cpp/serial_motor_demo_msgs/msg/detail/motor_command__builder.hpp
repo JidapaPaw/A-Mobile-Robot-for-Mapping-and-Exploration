@@ -21,15 +21,15 @@ namespace msg
 namespace builder
 {
 
-class Init_MotorCommand_mot_2_req_rad_sec
+class Init_MotorCommand_right
 {
 public:
-  explicit Init_MotorCommand_mot_2_req_rad_sec(::serial_motor_demo_msgs::msg::MotorCommand & msg)
+  explicit Init_MotorCommand_right(::serial_motor_demo_msgs::msg::MotorCommand & msg)
   : msg_(msg)
   {}
-  ::serial_motor_demo_msgs::msg::MotorCommand mot_2_req_rad_sec(::serial_motor_demo_msgs::msg::MotorCommand::_mot_2_req_rad_sec_type arg)
+  ::serial_motor_demo_msgs::msg::MotorCommand right(::serial_motor_demo_msgs::msg::MotorCommand::_right_type arg)
   {
-    msg_.mot_2_req_rad_sec = std::move(arg);
+    msg_.right = std::move(arg);
     return std::move(msg_);
   }
 
@@ -37,32 +37,16 @@ private:
   ::serial_motor_demo_msgs::msg::MotorCommand msg_;
 };
 
-class Init_MotorCommand_mot_1_req_rad_sec
+class Init_MotorCommand_left
 {
 public:
-  explicit Init_MotorCommand_mot_1_req_rad_sec(::serial_motor_demo_msgs::msg::MotorCommand & msg)
-  : msg_(msg)
-  {}
-  Init_MotorCommand_mot_2_req_rad_sec mot_1_req_rad_sec(::serial_motor_demo_msgs::msg::MotorCommand::_mot_1_req_rad_sec_type arg)
-  {
-    msg_.mot_1_req_rad_sec = std::move(arg);
-    return Init_MotorCommand_mot_2_req_rad_sec(msg_);
-  }
-
-private:
-  ::serial_motor_demo_msgs::msg::MotorCommand msg_;
-};
-
-class Init_MotorCommand_is_pwm
-{
-public:
-  Init_MotorCommand_is_pwm()
+  Init_MotorCommand_left()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_MotorCommand_mot_1_req_rad_sec is_pwm(::serial_motor_demo_msgs::msg::MotorCommand::_is_pwm_type arg)
+  Init_MotorCommand_right left(::serial_motor_demo_msgs::msg::MotorCommand::_left_type arg)
   {
-    msg_.is_pwm = std::move(arg);
-    return Init_MotorCommand_mot_1_req_rad_sec(msg_);
+    msg_.left = std::move(arg);
+    return Init_MotorCommand_right(msg_);
   }
 
 private:
@@ -80,7 +64,7 @@ template<>
 inline
 auto build<::serial_motor_demo_msgs::msg::MotorCommand>()
 {
-  return serial_motor_demo_msgs::msg::builder::Init_MotorCommand_is_pwm();
+  return serial_motor_demo_msgs::msg::builder::Init_MotorCommand_left();
 }
 
 }  // namespace serial_motor_demo_msgs

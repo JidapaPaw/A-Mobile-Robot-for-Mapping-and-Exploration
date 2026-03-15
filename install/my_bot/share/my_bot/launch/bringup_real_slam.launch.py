@@ -1,0 +1,1 @@
+/home/ubuntu/ros2_ws/build/my_bot/launch/bringup_real_slam.launch.py

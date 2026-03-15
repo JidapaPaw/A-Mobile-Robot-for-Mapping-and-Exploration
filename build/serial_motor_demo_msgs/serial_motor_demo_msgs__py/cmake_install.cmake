@@ -1,8 +1,8 @@
-# Install script for directory: /home/senseri/ros2_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py
+# Install script for directory: /home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/senseri/ros2_ws/install/serial_motor_demo_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

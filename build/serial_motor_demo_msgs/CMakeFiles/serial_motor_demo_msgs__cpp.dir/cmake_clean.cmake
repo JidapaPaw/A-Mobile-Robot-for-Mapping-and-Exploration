@@ -8,13 +8,8 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_command__struct.hpp"
   "rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_command__traits.hpp"
   "rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_command__type_support.hpp"
-  "rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__builder.hpp"
-  "rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__struct.hpp"
-  "rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__traits.hpp"
-  "rosidl_generator_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.hpp"
   "rosidl_generator_cpp/serial_motor_demo_msgs/msg/encoder_vals.hpp"
   "rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_command.hpp"
-  "rosidl_generator_cpp/serial_motor_demo_msgs/msg/motor_vels.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,1 +1,0 @@
-/home/senseri/ros2_ws/src/my_bot/launch/test_serial.py

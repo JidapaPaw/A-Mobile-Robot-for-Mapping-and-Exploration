@@ -1,0 +1,27 @@
+[7.204s] Invoking command in '/home/ubuntu/ros2_ws/build/my_bot': PYTHONPATH=/home/ubuntu/ros2_ws/build/my_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/ros2_ws/build/my_bot/build --no-deps symlink_data --force
+[9.200s] running develop
+[10.870s] running egg_info
+[10.872s] writing my_bot.egg-info/PKG-INFO
+[10.875s] writing dependency_links to my_bot.egg-info/dependency_links.txt
+[10.877s] writing entry points to my_bot.egg-info/entry_points.txt
+[10.880s] writing requirements to my_bot.egg-info/requires.txt
+[10.881s] writing top-level names to my_bot.egg-info/top_level.txt
+[10.895s] reading manifest file 'my_bot.egg-info/SOURCES.txt'
+[10.904s] writing manifest file 'my_bot.egg-info/SOURCES.txt'
+[10.914s] running build_ext
+[10.916s] Creating /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my-bot.egg-link (link to .)
+[10.921s] Installing cmd_vel_to_motor script to /home/ubuntu/ros2_ws/install/my_bot/lib/my_bot
+[10.921s] Installing encoder_odom script to /home/ubuntu/ros2_ws/install/my_bot/lib/my_bot
+[10.922s] Installing joy_button_teleop script to /home/ubuntu/ros2_ws/install/my_bot/lib/my_bot
+[10.923s] Installing robot_driver script to /home/ubuntu/ros2_ws/install/my_bot/lib/my_bot
+[10.925s] 
+[10.925s] Installed /home/ubuntu/ros2_ws/build/my_bot
+[10.926s] running symlink_data
+[10.927s] symbolically linking /home/ubuntu/ros2_ws/build/my_bot/resource/my_bot -> /home/ubuntu/ros2_ws/install/my_bot/share/ament_index/resource_index/packages
+[10.928s] symbolically linking /home/ubuntu/ros2_ws/build/my_bot/package.xml -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot
+[10.928s] symbolically linking /home/ubuntu/ros2_ws/build/my_bot/launch/bringup_real_slam.launch.py -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/launch
+[10.930s] symbolically linking /home/ubuntu/ros2_ws/build/my_bot/launch/bringup.launch.py -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/launch
+[10.932s] symbolically linking /home/ubuntu/ros2_ws/build/my_bot/config/slam.yaml -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/config
+[10.933s] symbolically linking /home/ubuntu/ros2_ws/build/my_bot/config/teleop_joy.yaml -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/config
+[10.935s] symbolically linking /home/ubuntu/ros2_ws/build/my_bot/config/slam_params.yaml -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/config
+[11.203s] Invoked command in '/home/ubuntu/ros2_ws/build/my_bot' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/build/my_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/ros2_ws/build/my_bot/build --no-deps symlink_data --force

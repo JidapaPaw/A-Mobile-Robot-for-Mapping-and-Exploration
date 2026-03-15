@@ -6,9 +6,9 @@
 module serial_motor_demo_msgs {
   module msg {
     struct EncoderVals {
-      int32 mot_1_enc_val;
+      int32 left;
 
-      int32 mot_2_enc_val;
+      int32 right;
     };
   };
 };

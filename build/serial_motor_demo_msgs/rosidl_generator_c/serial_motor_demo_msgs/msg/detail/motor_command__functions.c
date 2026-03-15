@@ -17,9 +17,8 @@ serial_motor_demo_msgs__msg__MotorCommand__init(serial_motor_demo_msgs__msg__Mot
   if (!msg) {
     return false;
   }
-  // is_pwm
-  // mot_1_req_rad_sec
-  // mot_2_req_rad_sec
+  // left
+  // right
   return true;
 }
 
@@ -29,9 +28,8 @@ serial_motor_demo_msgs__msg__MotorCommand__fini(serial_motor_demo_msgs__msg__Mot
   if (!msg) {
     return;
   }
-  // is_pwm
-  // mot_1_req_rad_sec
-  // mot_2_req_rad_sec
+  // left
+  // right
 }
 
 bool
@@ -40,16 +38,12 @@ serial_motor_demo_msgs__msg__MotorCommand__are_equal(const serial_motor_demo_msg
   if (!lhs || !rhs) {
     return false;
   }
-  // is_pwm
-  if (lhs->is_pwm != rhs->is_pwm) {
+  // left
+  if (lhs->left != rhs->left) {
     return false;
   }
-  // mot_1_req_rad_sec
-  if (lhs->mot_1_req_rad_sec != rhs->mot_1_req_rad_sec) {
-    return false;
-  }
-  // mot_2_req_rad_sec
-  if (lhs->mot_2_req_rad_sec != rhs->mot_2_req_rad_sec) {
+  // right
+  if (lhs->right != rhs->right) {
     return false;
   }
   return true;
@@ -63,12 +57,10 @@ serial_motor_demo_msgs__msg__MotorCommand__copy(
   if (!input || !output) {
     return false;
   }
-  // is_pwm
-  output->is_pwm = input->is_pwm;
-  // mot_1_req_rad_sec
-  output->mot_1_req_rad_sec = input->mot_1_req_rad_sec;
-  // mot_2_req_rad_sec
-  output->mot_2_req_rad_sec = input->mot_2_req_rad_sec;
+  // left
+  output->left = input->left;
+  // right
+  output->right = input->right;
   return true;
 }
 

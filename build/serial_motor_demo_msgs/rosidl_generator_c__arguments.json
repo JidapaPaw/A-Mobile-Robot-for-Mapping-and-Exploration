@@ -1,11 +1,10 @@
 {
   "package_name": "serial_motor_demo_msgs",
-  "output_dir": "/home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs",
+  "output_dir": "/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs:msg/MotorCommand.idl",
-    "/home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs:msg/MotorVels.idl",
-    "/home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs:msg/EncoderVals.idl"
+    "/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs:msg/MotorCommand.idl",
+    "/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs:msg/EncoderVals.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -21,8 +20,7 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs/msg/MotorCommand.idl",
-    "/home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs/msg/MotorVels.idl",
-    "/home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs/msg/EncoderVals.idl"
+    "/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs/msg/MotorCommand.idl",
+    "/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs/msg/EncoderVals.idl"
   ]
 }

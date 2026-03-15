@@ -1,3 +1,0 @@
-/home/senseri/ros2_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so
-/home/senseri/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport.cmake
-/home/senseri/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport-noconfig.cmake

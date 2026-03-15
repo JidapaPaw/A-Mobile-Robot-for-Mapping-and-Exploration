@@ -1,0 +1,75 @@
+running egg_info
+creating ../../build/my_bot/my_bot.egg-info
+writing ../../build/my_bot/my_bot.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_bot/my_bot.egg-info/dependency_links.txt
+writing entry points to ../../build/my_bot/my_bot.egg-info/entry_points.txt
+writing requirements to ../../build/my_bot/my_bot.egg-info/requires.txt
+writing top-level names to ../../build/my_bot/my_bot.egg-info/top_level.txt
+writing manifest file '../../build/my_bot/my_bot.egg-info/SOURCES.txt'
+reading manifest file '../../build/my_bot/my_bot.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_bot/my_bot.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/ros2_ws/build/my_bot/build
+creating /home/ubuntu/ros2_ws/build/my_bot/build/lib
+creating /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+copying my_bot/cmd_vel_to_motor.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+copying my_bot/odom_publisher.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+copying my_bot/static_tf_laser.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+copying my_bot/motor_cmd_to_arduino.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+copying my_bot/__init__.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+copying my_bot/cmdvel_to_motorcommand.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+copying my_bot/diff_drive_odom.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+copying my_bot/cmdvel_to_odom.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+copying my_bot/joy_button_teleop.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+copying my_bot/odom_tf_broadcaster.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+copying my_bot/encoder_odom.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+copying my_bot/robot_driver.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+running install
+running install_lib
+creating /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/cmd_vel_to_motor.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/odom_publisher.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/static_tf_laser.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/motor_cmd_to_arduino.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/__init__.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/cmdvel_to_motorcommand.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/diff_drive_odom.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/cmdvel_to_odom.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/joy_button_teleop.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/odom_tf_broadcaster.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/encoder_odom.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/robot_driver.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/cmd_vel_to_motor.py to cmd_vel_to_motor.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/odom_publisher.py to odom_publisher.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/static_tf_laser.py to static_tf_laser.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/motor_cmd_to_arduino.py to motor_cmd_to_arduino.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/cmdvel_to_motorcommand.py to cmdvel_to_motorcommand.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/diff_drive_odom.py to diff_drive_odom.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/cmdvel_to_odom.py to cmdvel_to_odom.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/joy_button_teleop.py to joy_button_teleop.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/odom_tf_broadcaster.py to odom_tf_broadcaster.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/encoder_odom.py to encoder_odom.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/robot_driver.py to robot_driver.cpython-310.pyc
+running install_data
+creating /home/ubuntu/ros2_ws/install/my_bot/share/ament_index
+creating /home/ubuntu/ros2_ws/install/my_bot/share/ament_index/resource_index
+creating /home/ubuntu/ros2_ws/install/my_bot/share/ament_index/resource_index/packages
+copying resource/my_bot -> /home/ubuntu/ros2_ws/install/my_bot/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot
+creating /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/launch
+copying launch/bringup_real_slam.launch.py -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/launch
+copying launch/bringup.launch.py -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/launch
+creating /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/config
+copying config/slam.yaml -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/config
+copying config/teleop_joy.yaml -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/config
+copying config/slam_params.yaml -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/config
+running install_egg_info
+Copying ../../build/my_bot/my_bot.egg-info to /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot-0.0.0-py3.10.egg-info
+running install_scripts
+Installing cmd_vel_to_motor script to /home/ubuntu/ros2_ws/install/my_bot/lib/my_bot
+Installing encoder_odom script to /home/ubuntu/ros2_ws/install/my_bot/lib/my_bot
+Installing joy_button_teleop script to /home/ubuntu/ros2_ws/install/my_bot/lib/my_bot
+Installing robot_driver script to /home/ubuntu/ros2_ws/install/my_bot/lib/my_bot
+writing list of installed files to '/home/ubuntu/ros2_ws/build/my_bot/install.log'

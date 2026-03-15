@@ -1,0 +1,25 @@
+[15.568s] Invoking command in '/home/ubuntu/ros2_ws/build/diffdrive_arduino': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/ros2_ws/build/diffdrive_arduino/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/diffdrive_arduino/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/ros2_ws/build/diffdrive_arduino/build --no-deps symlink_data
+[19.400s] running develop
+[22.358s] running egg_info
+[22.359s] creating diffdrive_arduino.egg-info
+[22.360s] writing diffdrive_arduino.egg-info/PKG-INFO
+[22.361s] writing dependency_links to diffdrive_arduino.egg-info/dependency_links.txt
+[22.375s] writing entry points to diffdrive_arduino.egg-info/entry_points.txt
+[22.376s] writing requirements to diffdrive_arduino.egg-info/requires.txt
+[22.377s] writing top-level names to diffdrive_arduino.egg-info/top_level.txt
+[22.378s] writing manifest file 'diffdrive_arduino.egg-info/SOURCES.txt'
+[22.400s] reading manifest file 'diffdrive_arduino.egg-info/SOURCES.txt'
+[22.404s] writing manifest file 'diffdrive_arduino.egg-info/SOURCES.txt'
+[22.418s] running build_ext
+[22.419s] Creating /home/ubuntu/ros2_ws/install/diffdrive_arduino/lib/python3.10/site-packages/diffdrive-arduino.egg-link (link to .)
+[22.440s] Installing cmd_vel_to_motor script to /home/ubuntu/ros2_ws/install/diffdrive_arduino/lib/diffdrive_arduino
+[22.441s] Installing cmd_vel_to_odom script to /home/ubuntu/ros2_ws/install/diffdrive_arduino/lib/diffdrive_arduino
+[22.443s] 
+[22.443s] Installed /home/ubuntu/ros2_ws/build/diffdrive_arduino
+[22.444s] running symlink_data
+[22.445s] creating /home/ubuntu/ros2_ws/install/diffdrive_arduino/share/ament_index
+[22.446s] creating /home/ubuntu/ros2_ws/install/diffdrive_arduino/share/ament_index/resource_index
+[22.446s] creating /home/ubuntu/ros2_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages
+[22.459s] symbolically linking /home/ubuntu/ros2_ws/build/diffdrive_arduino/resource/diffdrive_arduino -> /home/ubuntu/ros2_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages
+[22.460s] symbolically linking /home/ubuntu/ros2_ws/build/diffdrive_arduino/package.xml -> /home/ubuntu/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino
+[22.970s] Invoked command in '/home/ubuntu/ros2_ws/build/diffdrive_arduino' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs LD_LIBRARY_PATH=/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/ros2_ws/build/diffdrive_arduino/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/diffdrive_arduino/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/ros2_ws/build/diffdrive_arduino/build --no-deps symlink_data

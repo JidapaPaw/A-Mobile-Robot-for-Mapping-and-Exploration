@@ -7,8 +7,6 @@
 
 import builtins  # noqa: E402, I100
 
-import math  # noqa: E402, I100
-
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -57,30 +55,26 @@ class MotorCommand(metaclass=Metaclass_MotorCommand):
     """Message class 'MotorCommand'."""
 
     __slots__ = [
-        '_is_pwm',
-        '_mot_1_req_rad_sec',
-        '_mot_2_req_rad_sec',
+        '_left',
+        '_right',
     ]
 
     _fields_and_field_types = {
-        'is_pwm': 'boolean',
-        'mot_1_req_rad_sec': 'float',
-        'mot_2_req_rad_sec': 'float',
+        'left': 'int16',
+        'right': 'int16',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int16'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.is_pwm = kwargs.get('is_pwm', bool())
-        self.mot_1_req_rad_sec = kwargs.get('mot_1_req_rad_sec', float())
-        self.mot_2_req_rad_sec = kwargs.get('mot_2_req_rad_sec', float())
+        self.left = kwargs.get('left', int())
+        self.right = kwargs.get('right', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -111,11 +105,9 @@ class MotorCommand(metaclass=Metaclass_MotorCommand):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.is_pwm != other.is_pwm:
+        if self.left != other.left:
             return False
-        if self.mot_1_req_rad_sec != other.mot_1_req_rad_sec:
-            return False
-        if self.mot_2_req_rad_sec != other.mot_2_req_rad_sec:
+        if self.right != other.right:
             return False
         return True
 
@@ -125,44 +117,31 @@ class MotorCommand(metaclass=Metaclass_MotorCommand):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def is_pwm(self):
-        """Message field 'is_pwm'."""
-        return self._is_pwm
+    def left(self):
+        """Message field 'left'."""
+        return self._left
 
-    @is_pwm.setter
-    def is_pwm(self, value):
+    @left.setter
+    def left(self, value):
         if __debug__:
             assert \
-                isinstance(value, bool), \
-                "The 'is_pwm' field must be of type 'bool'"
-        self._is_pwm = value
+                isinstance(value, int), \
+                "The 'left' field must be of type 'int'"
+            assert value >= -32768 and value < 32768, \
+                "The 'left' field must be an integer in [-32768, 32767]"
+        self._left = value
 
     @builtins.property
-    def mot_1_req_rad_sec(self):
-        """Message field 'mot_1_req_rad_sec'."""
-        return self._mot_1_req_rad_sec
+    def right(self):
+        """Message field 'right'."""
+        return self._right
 
-    @mot_1_req_rad_sec.setter
-    def mot_1_req_rad_sec(self, value):
+    @right.setter
+    def right(self, value):
         if __debug__:
             assert \
-                isinstance(value, float), \
-                "The 'mot_1_req_rad_sec' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'mot_1_req_rad_sec' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._mot_1_req_rad_sec = value
-
-    @builtins.property
-    def mot_2_req_rad_sec(self):
-        """Message field 'mot_2_req_rad_sec'."""
-        return self._mot_2_req_rad_sec
-
-    @mot_2_req_rad_sec.setter
-    def mot_2_req_rad_sec(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'mot_2_req_rad_sec' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'mot_2_req_rad_sec' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._mot_2_req_rad_sec = value
+                isinstance(value, int), \
+                "The 'right' field must be of type 'int'"
+            assert value >= -32768 and value < 32768, \
+                "The 'right' field must be an integer in [-32768, 32767]"
+        self._right = value

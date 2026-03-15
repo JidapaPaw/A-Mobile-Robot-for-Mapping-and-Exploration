@@ -49,14 +49,14 @@ static bool _EncoderVals__cdr_serialize(
     return false;
   }
   const _EncoderVals__ros_msg_type * ros_message = static_cast<const _EncoderVals__ros_msg_type *>(untyped_ros_message);
-  // Field name: mot_1_enc_val
+  // Field name: left
   {
-    cdr << ros_message->mot_1_enc_val;
+    cdr << ros_message->left;
   }
 
-  // Field name: mot_2_enc_val
+  // Field name: right
   {
-    cdr << ros_message->mot_2_enc_val;
+    cdr << ros_message->right;
   }
 
   return true;
@@ -71,14 +71,14 @@ static bool _EncoderVals__cdr_deserialize(
     return false;
   }
   _EncoderVals__ros_msg_type * ros_message = static_cast<_EncoderVals__ros_msg_type *>(untyped_ros_message);
-  // Field name: mot_1_enc_val
+  // Field name: left
   {
-    cdr >> ros_message->mot_1_enc_val;
+    cdr >> ros_message->left;
   }
 
-  // Field name: mot_2_enc_val
+  // Field name: right
   {
-    cdr >> ros_message->mot_2_enc_val;
+    cdr >> ros_message->right;
   }
 
   return true;
@@ -98,15 +98,15 @@ size_t get_serialized_size_serial_motor_demo_msgs__msg__EncoderVals(
   (void)padding;
   (void)wchar_size;
 
-  // field.name mot_1_enc_val
+  // field.name left
   {
-    size_t item_size = sizeof(ros_message->mot_1_enc_val);
+    size_t item_size = sizeof(ros_message->left);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name mot_2_enc_val
+  // field.name right
   {
-    size_t item_size = sizeof(ros_message->mot_2_enc_val);
+    size_t item_size = sizeof(ros_message->right);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -139,7 +139,7 @@ size_t max_serialized_size_serial_motor_demo_msgs__msg__EncoderVals(
   full_bounded = true;
   is_plain = true;
 
-  // member: mot_1_enc_val
+  // member: left
   {
     size_t array_size = 1;
 
@@ -147,7 +147,7 @@ size_t max_serialized_size_serial_motor_demo_msgs__msg__EncoderVals(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: mot_2_enc_val
+  // member: right
   {
     size_t array_size = 1;
 
@@ -164,7 +164,7 @@ size_t max_serialized_size_serial_motor_demo_msgs__msg__EncoderVals(
     using DataType = serial_motor_demo_msgs__msg__EncoderVals;
     is_plain =
       (
-      offsetof(DataType, mot_2_enc_val) +
+      offsetof(DataType, right) +
       last_member_size
       ) == ret_val;
   }

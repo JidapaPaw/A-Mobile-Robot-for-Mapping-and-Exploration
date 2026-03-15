@@ -33,14 +33,14 @@ void serial_motor_demo_msgs__msg__EncoderVals__rosidl_typesupport_introspection_
 
 static rosidl_typesupport_introspection_c__MessageMember serial_motor_demo_msgs__msg__EncoderVals__rosidl_typesupport_introspection_c__EncoderVals_message_member_array[2] = {
   {
-    "mot_1_enc_val",  // name
+    "left",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(serial_motor_demo_msgs__msg__EncoderVals, mot_1_enc_val),  // bytes offset in struct
+    offsetof(serial_motor_demo_msgs__msg__EncoderVals, left),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -50,14 +50,14 @@ static rosidl_typesupport_introspection_c__MessageMember serial_motor_demo_msgs_
     NULL  // resize(index) function pointer
   },
   {
-    "mot_2_enc_val",  // name
+    "right",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(serial_motor_demo_msgs__msg__EncoderVals, mot_2_enc_val),  // bytes offset in struct
+    offsetof(serial_motor_demo_msgs__msg__EncoderVals, right),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

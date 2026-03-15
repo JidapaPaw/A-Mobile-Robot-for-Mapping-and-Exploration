@@ -7,6 +7,7 @@
 
 #include <algorithm>
 #include <array>
+#include <cstdint>
 #include <memory>
 #include <string>
 #include <vector>
@@ -38,8 +39,8 @@ struct EncoderVals_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->mot_1_enc_val = 0l;
-      this->mot_2_enc_val = 0l;
+      this->left = 0l;
+      this->right = 0l;
     }
   }
 
@@ -49,30 +50,30 @@ struct EncoderVals_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->mot_1_enc_val = 0l;
-      this->mot_2_enc_val = 0l;
+      this->left = 0l;
+      this->right = 0l;
     }
   }
 
   // field types and members
-  using _mot_1_enc_val_type =
+  using _left_type =
     int32_t;
-  _mot_1_enc_val_type mot_1_enc_val;
-  using _mot_2_enc_val_type =
+  _left_type left;
+  using _right_type =
     int32_t;
-  _mot_2_enc_val_type mot_2_enc_val;
+  _right_type right;
 
   // setters for named parameter idiom
-  Type & set__mot_1_enc_val(
+  Type & set__left(
     const int32_t & _arg)
   {
-    this->mot_1_enc_val = _arg;
+    this->left = _arg;
     return *this;
   }
-  Type & set__mot_2_enc_val(
+  Type & set__right(
     const int32_t & _arg)
   {
-    this->mot_2_enc_val = _arg;
+    this->right = _arg;
     return *this;
   }
 
@@ -118,10 +119,10 @@ struct EncoderVals_
   // comparison operators
   bool operator==(const EncoderVals_ & other) const
   {
-    if (this->mot_1_enc_val != other.mot_1_enc_val) {
+    if (this->left != other.left) {
       return false;
     }
-    if (this->mot_2_enc_val != other.mot_2_enc_val) {
+    if (this->right != other.right) {
       return false;
     }
     return true;

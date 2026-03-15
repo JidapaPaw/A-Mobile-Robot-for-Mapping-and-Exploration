@@ -7,6 +7,7 @@
 
 #include <algorithm>
 #include <array>
+#include <cstdint>
 #include <memory>
 #include <string>
 #include <vector>
@@ -38,9 +39,8 @@ struct MotorCommand_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->is_pwm = false;
-      this->mot_1_req_rad_sec = 0.0f;
-      this->mot_2_req_rad_sec = 0.0f;
+      this->left = 0;
+      this->right = 0;
     }
   }
 
@@ -50,40 +50,30 @@ struct MotorCommand_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->is_pwm = false;
-      this->mot_1_req_rad_sec = 0.0f;
-      this->mot_2_req_rad_sec = 0.0f;
+      this->left = 0;
+      this->right = 0;
     }
   }
 
   // field types and members
-  using _is_pwm_type =
-    bool;
-  _is_pwm_type is_pwm;
-  using _mot_1_req_rad_sec_type =
-    float;
-  _mot_1_req_rad_sec_type mot_1_req_rad_sec;
-  using _mot_2_req_rad_sec_type =
-    float;
-  _mot_2_req_rad_sec_type mot_2_req_rad_sec;
+  using _left_type =
+    int16_t;
+  _left_type left;
+  using _right_type =
+    int16_t;
+  _right_type right;
 
   // setters for named parameter idiom
-  Type & set__is_pwm(
-    const bool & _arg)
+  Type & set__left(
+    const int16_t & _arg)
   {
-    this->is_pwm = _arg;
+    this->left = _arg;
     return *this;
   }
-  Type & set__mot_1_req_rad_sec(
-    const float & _arg)
+  Type & set__right(
+    const int16_t & _arg)
   {
-    this->mot_1_req_rad_sec = _arg;
-    return *this;
-  }
-  Type & set__mot_2_req_rad_sec(
-    const float & _arg)
-  {
-    this->mot_2_req_rad_sec = _arg;
+    this->right = _arg;
     return *this;
   }
 
@@ -129,13 +119,10 @@ struct MotorCommand_
   // comparison operators
   bool operator==(const MotorCommand_ & other) const
   {
-    if (this->is_pwm != other.is_pwm) {
+    if (this->left != other.left) {
       return false;
     }
-    if (this->mot_1_req_rad_sec != other.mot_1_req_rad_sec) {
-      return false;
-    }
-    if (this->mot_2_req_rad_sec != other.mot_2_req_rad_sec) {
+    if (this->right != other.right) {
       return false;
     }
     return true;

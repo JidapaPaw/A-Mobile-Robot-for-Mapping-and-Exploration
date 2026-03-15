@@ -49,19 +49,14 @@ static bool _MotorCommand__cdr_serialize(
     return false;
   }
   const _MotorCommand__ros_msg_type * ros_message = static_cast<const _MotorCommand__ros_msg_type *>(untyped_ros_message);
-  // Field name: is_pwm
+  // Field name: left
   {
-    cdr << (ros_message->is_pwm ? true : false);
+    cdr << ros_message->left;
   }
 
-  // Field name: mot_1_req_rad_sec
+  // Field name: right
   {
-    cdr << ros_message->mot_1_req_rad_sec;
-  }
-
-  // Field name: mot_2_req_rad_sec
-  {
-    cdr << ros_message->mot_2_req_rad_sec;
+    cdr << ros_message->right;
   }
 
   return true;
@@ -76,21 +71,14 @@ static bool _MotorCommand__cdr_deserialize(
     return false;
   }
   _MotorCommand__ros_msg_type * ros_message = static_cast<_MotorCommand__ros_msg_type *>(untyped_ros_message);
-  // Field name: is_pwm
+  // Field name: left
   {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message->is_pwm = tmp ? true : false;
+    cdr >> ros_message->left;
   }
 
-  // Field name: mot_1_req_rad_sec
+  // Field name: right
   {
-    cdr >> ros_message->mot_1_req_rad_sec;
-  }
-
-  // Field name: mot_2_req_rad_sec
-  {
-    cdr >> ros_message->mot_2_req_rad_sec;
+    cdr >> ros_message->right;
   }
 
   return true;
@@ -110,21 +98,15 @@ size_t get_serialized_size_serial_motor_demo_msgs__msg__MotorCommand(
   (void)padding;
   (void)wchar_size;
 
-  // field.name is_pwm
+  // field.name left
   {
-    size_t item_size = sizeof(ros_message->is_pwm);
+    size_t item_size = sizeof(ros_message->left);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name mot_1_req_rad_sec
+  // field.name right
   {
-    size_t item_size = sizeof(ros_message->mot_1_req_rad_sec);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name mot_2_req_rad_sec
-  {
-    size_t item_size = sizeof(ros_message->mot_2_req_rad_sec);
+    size_t item_size = sizeof(ros_message->right);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -157,28 +139,21 @@ size_t max_serialized_size_serial_motor_demo_msgs__msg__MotorCommand(
   full_bounded = true;
   is_plain = true;
 
-  // member: is_pwm
+  // member: left
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
   }
-  // member: mot_1_req_rad_sec
+  // member: right
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: mot_2_req_rad_sec
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -189,7 +164,7 @@ size_t max_serialized_size_serial_motor_demo_msgs__msg__MotorCommand(
     using DataType = serial_motor_demo_msgs__msg__MotorCommand;
     is_plain =
       (
-      offsetof(DataType, mot_2_req_rad_sec) +
+      offsetof(DataType, right) +
       last_member_size
       ) == ret_val;
   }

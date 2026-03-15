@@ -21,15 +21,15 @@ namespace msg
 namespace builder
 {
 
-class Init_EncoderVals_mot_2_enc_val
+class Init_EncoderVals_right
 {
 public:
-  explicit Init_EncoderVals_mot_2_enc_val(::serial_motor_demo_msgs::msg::EncoderVals & msg)
+  explicit Init_EncoderVals_right(::serial_motor_demo_msgs::msg::EncoderVals & msg)
   : msg_(msg)
   {}
-  ::serial_motor_demo_msgs::msg::EncoderVals mot_2_enc_val(::serial_motor_demo_msgs::msg::EncoderVals::_mot_2_enc_val_type arg)
+  ::serial_motor_demo_msgs::msg::EncoderVals right(::serial_motor_demo_msgs::msg::EncoderVals::_right_type arg)
   {
-    msg_.mot_2_enc_val = std::move(arg);
+    msg_.right = std::move(arg);
     return std::move(msg_);
   }
 
@@ -37,16 +37,16 @@ private:
   ::serial_motor_demo_msgs::msg::EncoderVals msg_;
 };
 
-class Init_EncoderVals_mot_1_enc_val
+class Init_EncoderVals_left
 {
 public:
-  Init_EncoderVals_mot_1_enc_val()
+  Init_EncoderVals_left()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_EncoderVals_mot_2_enc_val mot_1_enc_val(::serial_motor_demo_msgs::msg::EncoderVals::_mot_1_enc_val_type arg)
+  Init_EncoderVals_right left(::serial_motor_demo_msgs::msg::EncoderVals::_left_type arg)
   {
-    msg_.mot_1_enc_val = std::move(arg);
-    return Init_EncoderVals_mot_2_enc_val(msg_);
+    msg_.left = std::move(arg);
+    return Init_EncoderVals_right(msg_);
   }
 
 private:
@@ -64,7 +64,7 @@ template<>
 inline
 auto build<::serial_motor_demo_msgs::msg::EncoderVals>()
 {
-  return serial_motor_demo_msgs::msg::builder::Init_EncoderVals_mot_1_enc_val();
+  return serial_motor_demo_msgs::msg::builder::Init_EncoderVals_left();
 }
 
 }  // namespace serial_motor_demo_msgs

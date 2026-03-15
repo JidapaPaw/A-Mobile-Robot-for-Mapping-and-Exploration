@@ -1,1 +1,0 @@
-/home/senseri/ros2_ws/src/serial_motor_demo_msgs/msg/MotorVels.msg

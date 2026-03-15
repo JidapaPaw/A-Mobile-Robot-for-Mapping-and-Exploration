@@ -1,1 +1,1 @@
-/home/senseri/ros2_ws/src/serial_motor_demo_msgs/msg/MotorCommand.msg
+/home/ubuntu/ros2_ws/src/serial_motor_demo_msgs/msg/MotorCommand.msg

@@ -1,1 +1,1 @@
-/home/senseri/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c
+/home/ubuntu/ros2_ws/build/serial_motor_demo_msgs/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c

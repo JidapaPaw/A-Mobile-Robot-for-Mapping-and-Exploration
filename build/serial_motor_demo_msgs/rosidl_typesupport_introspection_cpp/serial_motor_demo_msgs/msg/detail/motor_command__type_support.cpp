@@ -37,16 +37,16 @@ void MotorCommand_fini_function(void * message_memory)
   typed_message->~MotorCommand();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember MotorCommand_message_member_array[3] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember MotorCommand_message_member_array[2] = {
   {
-    "is_pwm",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    "left",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(serial_motor_demo_msgs::msg::MotorCommand, is_pwm),  // bytes offset in struct
+    offsetof(serial_motor_demo_msgs::msg::MotorCommand, left),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -56,31 +56,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember MotorCommand_
     nullptr  // resize(index) function pointer
   },
   {
-    "mot_1_req_rad_sec",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    "right",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT16,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(serial_motor_demo_msgs::msg::MotorCommand, mot_1_req_rad_sec),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "mot_2_req_rad_sec",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(serial_motor_demo_msgs::msg::MotorCommand, mot_2_req_rad_sec),  // bytes offset in struct
+    offsetof(serial_motor_demo_msgs::msg::MotorCommand, right),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -94,7 +77,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember MotorCommand_
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers MotorCommand_message_members = {
   "serial_motor_demo_msgs::msg",  // message namespace
   "MotorCommand",  // message name
-  3,  // number of fields
+  2,  // number of fields
   sizeof(serial_motor_demo_msgs::msg::MotorCommand),
   MotorCommand_message_member_array,  // message members
   MotorCommand_init_function,  // function to initialize message memory (memory has to be allocated)

@@ -20,8 +20,8 @@ extern "C"
 /// Struct defined in msg/EncoderVals in the package serial_motor_demo_msgs.
 typedef struct serial_motor_demo_msgs__msg__EncoderVals
 {
-  int32_t mot_1_enc_val;
-  int32_t mot_2_enc_val;
+  int32_t left;
+  int32_t right;
 } serial_motor_demo_msgs__msg__EncoderVals;
 
 // Struct for a sequence of serial_motor_demo_msgs__msg__EncoderVals.

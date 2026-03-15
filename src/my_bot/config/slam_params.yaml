@@ -1,0 +1,35 @@
+slam_toolbox:
+  ros__parameters:
+    use_sim_time: false
+
+    # Frames
+    map_frame: map
+    odom_frame: odom
+    base_frame: base_link
+    scan_topic: /scan
+
+    # ===== ทำให้นิ่ง =====
+    mode: mapping
+    transform_timeout: 0.2
+
+    # ถ้า map สั่นตอนเลี้ยว ให้เพิ่มค่าพวกนี้
+    minimum_time_interval: 0.2        # ไม่อัปเดตถี่เกินไป (ลด jitter)
+    throttled_scans: 1                # ใช้ทุกสแกน (ถ้าหนักค่อยเพิ่มเป็น 2)
+
+    # ลดการกระโดดของ pose
+    max_laser_range: 8.0              # ตั้งตามพื้นที่จริง (ในห้อง 6-8m พอ)
+    minimum_travel_distance: 0.05     # ขยับอย่างน้อย 5cm ค่อยอัปเดต
+    minimum_travel_heading: 0.05      # หมุนอย่างน้อย ~3deg ค่อยอัปเดต
+
+    # ปรับความเข้มงวด matching ให้แน่นขึ้น (ช่วย map นิ่ง)
+    use_scan_matching: true
+    use_scan_barycenter: true
+
+    # ถ้า drift เยอะ ให้เปิด
+    do_loop_closing: true
+    loop_search_maximum_distance: 3.0
+
+    # ลด noise
+    scan_buffer_size: 20
+    scan_buffer_maximum_scan_distance: 8.0
+

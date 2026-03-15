@@ -1,0 +1,14 @@
+teleop_twist_joy:
+  ros__parameters:
+    axis_linear:
+      x: 1        # อนาล็อกซ้าย ขึ้น-ลง
+    scale_linear:
+      x: 0.25     # ความเร็วเดินหน้า (m/s)
+
+    axis_angular:
+      yaw: 0      # อนาล็อกซ้าย ซ้าย-ขวา
+    scale_angular:
+      yaw: 1.5    # ความเร็วหมุน (rad/s)
+
+    enable_button: 5   # RB (กดค้างถึงจะวิ่ง)
+    enable_turbo_button: 4  # LB (เร่ง)

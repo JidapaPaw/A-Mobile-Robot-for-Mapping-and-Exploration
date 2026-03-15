@@ -1,0 +1,77 @@
+[3.477s] Invoking command in '/home/ubuntu/ros2_ws/src/my_bot': PYTHONPATH=/home/ubuntu/ros2_ws/build/my_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_bot build --build-base /home/ubuntu/ros2_ws/build/my_bot/build install --record /home/ubuntu/ros2_ws/build/my_bot/install.log --single-version-externally-managed install_data
+[4.871s] running egg_info
+[4.874s] creating ../../build/my_bot/my_bot.egg-info
+[4.875s] writing ../../build/my_bot/my_bot.egg-info/PKG-INFO
+[4.876s] writing dependency_links to ../../build/my_bot/my_bot.egg-info/dependency_links.txt
+[4.876s] writing entry points to ../../build/my_bot/my_bot.egg-info/entry_points.txt
+[4.877s] writing requirements to ../../build/my_bot/my_bot.egg-info/requires.txt
+[4.877s] writing top-level names to ../../build/my_bot/my_bot.egg-info/top_level.txt
+[4.879s] writing manifest file '../../build/my_bot/my_bot.egg-info/SOURCES.txt'
+[4.887s] reading manifest file '../../build/my_bot/my_bot.egg-info/SOURCES.txt'
+[4.891s] writing manifest file '../../build/my_bot/my_bot.egg-info/SOURCES.txt'
+[4.892s] running build
+[4.892s] running build_py
+[4.894s] creating /home/ubuntu/ros2_ws/build/my_bot/build
+[4.894s] creating /home/ubuntu/ros2_ws/build/my_bot/build/lib
+[4.894s] creating /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+[4.895s] copying my_bot/cmd_vel_to_motor.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+[4.895s] copying my_bot/odom_publisher.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+[4.896s] copying my_bot/static_tf_laser.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+[4.897s] copying my_bot/motor_cmd_to_arduino.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+[4.897s] copying my_bot/__init__.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+[4.898s] copying my_bot/cmdvel_to_motorcommand.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+[4.899s] copying my_bot/diff_drive_odom.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+[4.899s] copying my_bot/cmdvel_to_odom.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+[4.900s] copying my_bot/joy_button_teleop.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+[4.901s] copying my_bot/odom_tf_broadcaster.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+[4.902s] copying my_bot/encoder_odom.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+[4.903s] copying my_bot/robot_driver.py -> /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot
+[4.905s] running install
+[4.906s] running install_lib
+[4.910s] creating /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+[4.910s] copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/cmd_vel_to_motor.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+[4.911s] copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/odom_publisher.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+[4.912s] copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/static_tf_laser.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+[4.913s] copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/motor_cmd_to_arduino.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+[4.914s] copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/__init__.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+[4.914s] copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/cmdvel_to_motorcommand.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+[4.915s] copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/diff_drive_odom.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+[4.916s] copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/cmdvel_to_odom.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+[4.917s] copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/joy_button_teleop.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+[4.918s] copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/odom_tf_broadcaster.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+[4.918s] copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/encoder_odom.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+[4.919s] copying /home/ubuntu/ros2_ws/build/my_bot/build/lib/my_bot/robot_driver.py -> /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot
+[4.922s] byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/cmd_vel_to_motor.py to cmd_vel_to_motor.cpython-310.pyc
+[4.926s] byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/odom_publisher.py to odom_publisher.cpython-310.pyc
+[4.929s] byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/static_tf_laser.py to static_tf_laser.cpython-310.pyc
+[4.931s] byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/motor_cmd_to_arduino.py to motor_cmd_to_arduino.cpython-310.pyc
+[4.935s] byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/__init__.py to __init__.cpython-310.pyc
+[4.936s] byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/cmdvel_to_motorcommand.py to cmdvel_to_motorcommand.cpython-310.pyc
+[4.939s] byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/diff_drive_odom.py to diff_drive_odom.cpython-310.pyc
+[4.942s] byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/cmdvel_to_odom.py to cmdvel_to_odom.cpython-310.pyc
+[4.945s] byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/joy_button_teleop.py to joy_button_teleop.cpython-310.pyc
+[4.948s] byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/odom_tf_broadcaster.py to odom_tf_broadcaster.cpython-310.pyc
+[4.950s] byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/encoder_odom.py to encoder_odom.cpython-310.pyc
+[4.957s] byte-compiling /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot/robot_driver.py to robot_driver.cpython-310.pyc
+[4.965s] running install_data
+[4.966s] creating /home/ubuntu/ros2_ws/install/my_bot/share/ament_index
+[4.967s] creating /home/ubuntu/ros2_ws/install/my_bot/share/ament_index/resource_index
+[4.967s] creating /home/ubuntu/ros2_ws/install/my_bot/share/ament_index/resource_index/packages
+[4.967s] copying resource/my_bot -> /home/ubuntu/ros2_ws/install/my_bot/share/ament_index/resource_index/packages
+[4.968s] copying package.xml -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot
+[4.968s] creating /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/launch
+[4.969s] copying launch/bringup_real_slam.launch.py -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/launch
+[4.969s] copying launch/bringup.launch.py -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/launch
+[4.970s] creating /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/config
+[4.971s] copying config/slam.yaml -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/config
+[4.971s] copying config/teleop_joy.yaml -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/config
+[4.972s] copying config/slam_params.yaml -> /home/ubuntu/ros2_ws/install/my_bot/share/my_bot/config
+[4.972s] running install_egg_info
+[4.980s] Copying ../../build/my_bot/my_bot.egg-info to /home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages/my_bot-0.0.0-py3.10.egg-info
+[4.986s] running install_scripts
+[5.071s] Installing cmd_vel_to_motor script to /home/ubuntu/ros2_ws/install/my_bot/lib/my_bot
+[5.072s] Installing encoder_odom script to /home/ubuntu/ros2_ws/install/my_bot/lib/my_bot
+[5.072s] Installing joy_button_teleop script to /home/ubuntu/ros2_ws/install/my_bot/lib/my_bot
+[5.073s] Installing robot_driver script to /home/ubuntu/ros2_ws/install/my_bot/lib/my_bot
+[5.075s] writing list of installed files to '/home/ubuntu/ros2_ws/build/my_bot/install.log'
+[5.191s] Invoked command in '/home/ubuntu/ros2_ws/src/my_bot' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/build/my_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/my_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_bot build --build-base /home/ubuntu/ros2_ws/build/my_bot/build install --record /home/ubuntu/ros2_ws/build/my_bot/install.log --single-version-externally-managed install_data

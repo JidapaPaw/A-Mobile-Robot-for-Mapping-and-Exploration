@@ -50,31 +50,22 @@ bool serial_motor_demo_msgs__msg__motor_command__convert_from_py(PyObject * _pym
     assert(strncmp("serial_motor_demo_msgs.msg._motor_command.MotorCommand", full_classname_dest, 54) == 0);
   }
   serial_motor_demo_msgs__msg__MotorCommand * ros_message = _ros_message;
-  {  // is_pwm
-    PyObject * field = PyObject_GetAttrString(_pymsg, "is_pwm");
+  {  // left
+    PyObject * field = PyObject_GetAttrString(_pymsg, "left");
     if (!field) {
       return false;
     }
-    assert(PyBool_Check(field));
-    ros_message->is_pwm = (Py_True == field);
+    assert(PyLong_Check(field));
+    ros_message->left = (int16_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
-  {  // mot_1_req_rad_sec
-    PyObject * field = PyObject_GetAttrString(_pymsg, "mot_1_req_rad_sec");
+  {  // right
+    PyObject * field = PyObject_GetAttrString(_pymsg, "right");
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->mot_1_req_rad_sec = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // mot_2_req_rad_sec
-    PyObject * field = PyObject_GetAttrString(_pymsg, "mot_2_req_rad_sec");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->mot_2_req_rad_sec = (float)PyFloat_AS_DOUBLE(field);
+    assert(PyLong_Check(field));
+    ros_message->right = (int16_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
 
@@ -99,33 +90,22 @@ PyObject * serial_motor_demo_msgs__msg__motor_command__convert_to_py(void * raw_
     }
   }
   serial_motor_demo_msgs__msg__MotorCommand * ros_message = (serial_motor_demo_msgs__msg__MotorCommand *)raw_ros_message;
-  {  // is_pwm
+  {  // left
     PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->is_pwm ? 1 : 0);
+    field = PyLong_FromLong(ros_message->left);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "is_pwm", field);
+      int rc = PyObject_SetAttrString(_pymessage, "left", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // mot_1_req_rad_sec
+  {  // right
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->mot_1_req_rad_sec);
+    field = PyLong_FromLong(ros_message->right);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "mot_1_req_rad_sec", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // mot_2_req_rad_sec
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->mot_2_req_rad_sec);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "mot_2_req_rad_sec", field);
+      int rc = PyObject_SetAttrString(_pymessage, "right", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

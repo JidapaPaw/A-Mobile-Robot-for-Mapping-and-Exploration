@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+motor_serial_bridge/__init__.py
+motor_serial_bridge/motor_serial_bridge_node.py
+motor_serial_bridge.egg-info/PKG-INFO
+motor_serial_bridge.egg-info/SOURCES.txt
+motor_serial_bridge.egg-info/dependency_links.txt
+motor_serial_bridge.egg-info/entry_points.txt
+motor_serial_bridge.egg-info/requires.txt
+motor_serial_bridge.egg-info/top_level.txt
+motor_serial_bridge.egg-info/zip-safe
+resource/motor_serial_bridge

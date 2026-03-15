@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating slam_all.egg-info
+writing slam_all.egg-info/PKG-INFO
+writing dependency_links to slam_all.egg-info/dependency_links.txt
+writing entry points to slam_all.egg-info/entry_points.txt
+writing requirements to slam_all.egg-info/requires.txt
+writing top-level names to slam_all.egg-info/top_level.txt
+writing manifest file 'slam_all.egg-info/SOURCES.txt'
+reading manifest file 'slam_all.egg-info/SOURCES.txt'
+writing manifest file 'slam_all.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ubuntu/ros2_ws/install/slam_all/lib/python3.10/site-packages/slam-all.egg-link (link to .)
+Installing fake_odom script to /home/ubuntu/ros2_ws/install/slam_all/lib/slam_all
+
+Installed /home/ubuntu/ros2_ws/build/slam_all
+running symlink_data
+creating /home/ubuntu/ros2_ws/install/slam_all/share/ament_index
+creating /home/ubuntu/ros2_ws/install/slam_all/share/ament_index/resource_index
+creating /home/ubuntu/ros2_ws/install/slam_all/share/ament_index/resource_index/packages
+symbolically linking /home/ubuntu/ros2_ws/build/slam_all/resource/slam_all -> /home/ubuntu/ros2_ws/install/slam_all/share/ament_index/resource_index/packages
+symbolically linking /home/ubuntu/ros2_ws/build/slam_all/package.xml -> /home/ubuntu/ros2_ws/install/slam_all/share/slam_all
+creating /home/ubuntu/ros2_ws/install/slam_all/share/slam_all/launch
+symbolically linking /home/ubuntu/ros2_ws/build/slam_all/launch/all.launch.py -> /home/ubuntu/ros2_ws/install/slam_all/share/slam_all/launch
+creating /home/ubuntu/ros2_ws/install/slam_all/share/slam_all/config
+symbolically linking /home/ubuntu/ros2_ws/build/slam_all/config/slam_async.yaml -> /home/ubuntu/ros2_ws/install/slam_all/share/slam_all/config

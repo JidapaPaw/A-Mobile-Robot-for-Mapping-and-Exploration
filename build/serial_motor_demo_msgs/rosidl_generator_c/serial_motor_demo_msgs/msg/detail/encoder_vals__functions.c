@@ -17,8 +17,8 @@ serial_motor_demo_msgs__msg__EncoderVals__init(serial_motor_demo_msgs__msg__Enco
   if (!msg) {
     return false;
   }
-  // mot_1_enc_val
-  // mot_2_enc_val
+  // left
+  // right
   return true;
 }
 
@@ -28,8 +28,8 @@ serial_motor_demo_msgs__msg__EncoderVals__fini(serial_motor_demo_msgs__msg__Enco
   if (!msg) {
     return;
   }
-  // mot_1_enc_val
-  // mot_2_enc_val
+  // left
+  // right
 }
 
 bool
@@ -38,12 +38,12 @@ serial_motor_demo_msgs__msg__EncoderVals__are_equal(const serial_motor_demo_msgs
   if (!lhs || !rhs) {
     return false;
   }
-  // mot_1_enc_val
-  if (lhs->mot_1_enc_val != rhs->mot_1_enc_val) {
+  // left
+  if (lhs->left != rhs->left) {
     return false;
   }
-  // mot_2_enc_val
-  if (lhs->mot_2_enc_val != rhs->mot_2_enc_val) {
+  // right
+  if (lhs->right != rhs->right) {
     return false;
   }
   return true;
@@ -57,10 +57,10 @@ serial_motor_demo_msgs__msg__EncoderVals__copy(
   if (!input || !output) {
     return false;
   }
-  // mot_1_enc_val
-  output->mot_1_enc_val = input->mot_1_enc_val;
-  // mot_2_enc_val
-  output->mot_2_enc_val = input->mot_2_enc_val;
+  // left
+  output->left = input->left;
+  // right
+  output->right = input->right;
   return true;
 }
 

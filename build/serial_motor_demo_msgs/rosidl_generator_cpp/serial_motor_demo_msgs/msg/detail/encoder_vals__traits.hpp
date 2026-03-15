@@ -25,17 +25,17 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: mot_1_enc_val
+  // member: left
   {
-    out << "mot_1_enc_val: ";
-    rosidl_generator_traits::value_to_yaml(msg.mot_1_enc_val, out);
+    out << "left: ";
+    rosidl_generator_traits::value_to_yaml(msg.left, out);
     out << ", ";
   }
 
-  // member: mot_2_enc_val
+  // member: right
   {
-    out << "mot_2_enc_val: ";
-    rosidl_generator_traits::value_to_yaml(msg.mot_2_enc_val, out);
+    out << "right: ";
+    rosidl_generator_traits::value_to_yaml(msg.right, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -44,23 +44,23 @@ inline void to_block_style_yaml(
   const EncoderVals & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: mot_1_enc_val
+  // member: left
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "mot_1_enc_val: ";
-    rosidl_generator_traits::value_to_yaml(msg.mot_1_enc_val, out);
+    out << "left: ";
+    rosidl_generator_traits::value_to_yaml(msg.left, out);
     out << "\n";
   }
 
-  // member: mot_2_enc_val
+  // member: right
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "mot_2_enc_val: ";
-    rosidl_generator_traits::value_to_yaml(msg.mot_2_enc_val, out);
+    out << "right: ";
+    rosidl_generator_traits::value_to_yaml(msg.right, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

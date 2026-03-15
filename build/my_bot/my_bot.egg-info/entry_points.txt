@@ -1,0 +1,6 @@
+[console_scripts]
+cmd_vel_to_motor = my_bot.cmd_vel_to_motor:main
+encoder_odom = my_bot.encoder_odom:main
+joy_button_teleop = my_bot.joy_button_teleop:main
+robot_driver = my_bot.robot_driver:main
+

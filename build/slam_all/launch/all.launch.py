@@ -1,0 +1,1 @@
+/home/ubuntu/ros2_ws/src/slam_all/launch/all.launch.py
